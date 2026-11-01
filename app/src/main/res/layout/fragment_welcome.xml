@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".navigation.fragments.WelcomeFragment">
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    android:background="#F5EFE8">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/tvLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HairCare"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="#5D4037"
+        android:layout_marginBottom="15dp" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu belleza, nuestra pasión"
+        android:textSize="22sp"
+        android:textColor="#795548"
+        android:gravity="center"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descubre nuestros servicios de peluquería y reserva tus citas de forma rápida y sencilla."
+        android:textSize="16sp"
+        android:textColor="#6D6D6D"
+        android:gravity="center"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar sesión"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#795548"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear cuenta"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#A1887F" />
+
+</LinearLayout>
