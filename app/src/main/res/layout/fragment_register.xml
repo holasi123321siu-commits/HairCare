@@ -76,5 +76,14 @@
             android:textColor="#FFFFFF"
             android:backgroundTint="#795548" />
 
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textColor="#795548"
+            android:backgroundTint="#E8D9CC"
+            android:layout_marginTop="15dp" />
+
     </LinearLayout>
 </ScrollView>

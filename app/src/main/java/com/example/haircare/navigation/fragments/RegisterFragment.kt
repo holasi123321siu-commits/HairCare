@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.haircare.R
 import com.example.haircare.databinding.FragmentRegisterBinding
+import androidx.navigation.findNavController
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
 
@@ -70,5 +71,10 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                 ).show()
             }
         }
+
+        binding.btnBack.setOnClickListener {
+            view.findNavController().navigateUp()
+        }
+
     }
 }
