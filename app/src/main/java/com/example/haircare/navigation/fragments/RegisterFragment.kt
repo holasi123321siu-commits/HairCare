@@ -17,6 +17,23 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
         binding = FragmentRegisterBinding.bind(view)
 
+        binding.etName.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                binding.etName.setHint("Escribe tu nombre")
+            } else {
+                binding.etName.setHint("Nombre")
+            }
+        }
+
+        binding.etEmail.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                binding.etEmail.setHint("ejemplo@correo.com")
+            } else {
+                binding.etEmail.setHint("Correo electrónico")
+            }
+        }
+
+
         binding.btnRegister.setOnClickListener {
 
             val name = binding.etName.text.toString().trim()
