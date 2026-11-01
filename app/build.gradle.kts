@@ -6,9 +6,10 @@ android {
     namespace = "com.example.haircare"
     compileSdk {
         version = release(37)
-        buildFeatures {
-            viewBinding = true
-        }
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     defaultConfig {
