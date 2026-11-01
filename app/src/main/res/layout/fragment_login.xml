@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5EFE8"
+    android:background="@color/haircare_background"
     android:fillViewport="true">
 
     <LinearLayout
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:text="Iniciar sesión"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#795548"
+            android:backgroundTint="@color/haircare_primary"
             android:layout_marginBottom="15dp" />
 
         <Button
@@ -66,6 +66,16 @@
             android:text="¿Olvidaste tu contraseña?"
             android:textColor="#FFFFFF"
             android:backgroundTint="#A1887F" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textColor="#795548"
+            android:backgroundTint="#E8D9CC"
+            android:layout_marginTop="15dp" />
+
 
     </LinearLayout>
 </ScrollView>

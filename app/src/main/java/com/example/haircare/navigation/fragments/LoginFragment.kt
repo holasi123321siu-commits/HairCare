@@ -43,5 +43,10 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
                 R.id.action_login_to_recovery
             )
         }
+
+        binding.btnBack.setOnClickListener {
+            view.findNavController().navigateUp()
+        }
+
     }
 }

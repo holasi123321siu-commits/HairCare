@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="haircare_background">#F5EFE8</color>
+    <color name="haircare_primary">#795548</color>
+    <color name="haircare_dark">#5D4037</color>
+    <color name="haircare_accent">#C89F9C</color>
+    <color name="haircare_white">#FFFFFF</color>
+
 </resources>
