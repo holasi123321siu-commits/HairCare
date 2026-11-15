@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">HairCare</string>
+
+    <!-- Pantalla de bienvenida -->
+    <string name="welcome_title">Your beauty, our passion</string>
+    <string name="welcome_description">Discover our hairdressing services and book your appointments quickly and easily.</string>
+
+    <!-- Pantalla de login -->
+    <string name="login_title">Welcome back</string>
+    <string name="login_description">Log in to HairCare</string>
+    <string name="login">Log in</string>
+    <string name="forgot_password">Forgot your password?</string>
+
+    <!-- Pantalla de registro -->
+    <string name="register_title">Create account</string>
+    <string name="register_description">Join HairCare and enjoy our services</string>
+    <string name="register">Sign up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm password</string>
+
+    <!-- Pantalla de recuperación -->
+    <string name="recovery_title">Recover password</string>
+    <string name="recovery_description">Enter your email address to recover your account.</string>
+    <string name="recovery">Request password recovery</string>
+    <string name="back_login">Back to login</string>
+
+    <!-- Textos comunes -->
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="back">Back</string>
+
+    <!-- Errores de validación -->
+    <string name="error_name">Enter your name</string>
+    <string name="error_email">Invalid email address</string>
+    <string name="error_password">Password must contain at least 8 characters</string>
+    <string name="error_confirm_password">Passwords do not match</string>
+    <string name="error_login">Incorrect email or password</string>
+
+    <!-- Mensajes -->
+    <string name="login_success">Login successful</string>
+    <string name="register_success">Registration form is valid</string>
+    <string name="recovery_success">Recovery request submitted</string>
+
+    <!-- Pantalla Home -->
+    <string name="home">Home</string>
+
+</resources>
