@@ -22,18 +22,20 @@ class RecoveryFragment : Fragment(R.layout.fragment_recovery) {
 
             val email = binding.etEmailRecovery.text.toString().trim()
 
+            binding.tilEmailRecovery.error = null
+
             if (email.isEmpty()) {
-                binding.etEmailRecovery.error =
-                    "Introduce tu correo electrónico"
+                binding.tilEmailRecovery.error =
+                    getString(R.string.error_email)
 
             } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                binding.etEmailRecovery.error =
-                    "El correo electrónico no es válido"
+                binding.tilEmailRecovery.error =
+                    getString(R.string.error_email)
 
             } else {
                 Toast.makeText(
                     requireContext(),
-                    "Solicitud simulada correctamente",
+                    getString(R.string.recovery_success),
                     Toast.LENGTH_LONG
                 ).show()
             }

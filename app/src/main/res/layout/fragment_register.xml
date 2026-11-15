@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Crear cuenta"
+            android:text="@string/register_title"
             android:textSize="30sp"
             android:textStyle="bold"
             android:textColor="#5D4037"
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Únete a HairCare y disfruta de nuestros servicios"
+            android:text="@string/register_description"
             android:textSize="16sp"
             android:textColor="#795548"
             android:gravity="center"
@@ -36,7 +36,7 @@
             android:id="@+id/tilName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre"
+            android:hint="@string/name"
             android:layout_marginBottom="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -52,7 +52,7 @@
             android:id="@+id/tilEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo electrónico"
+            android:hint="@string/email"
             android:layout_marginBottom="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -68,7 +68,7 @@
             android:id="@+id/tilPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
+            android:hint="@string/password"
             android:layout_marginBottom="15dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -84,7 +84,7 @@
             android:id="@+id/tilConfirmPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirmar contraseña"
+            android:hint="@string/confirm_password"
             android:layout_marginBottom="30dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -100,7 +100,7 @@
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
+            android:text="@string/register"
             android:textColor="#FFFFFF"
             android:backgroundTint="#795548" />
 
@@ -108,7 +108,7 @@
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Volver"
+            android:text="@string/back"
             android:textColor="#795548"
             android:backgroundTint="#E8D9CC"
             android:layout_marginTop="15dp" />

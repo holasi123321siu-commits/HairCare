@@ -5,9 +5,9 @@ import android.util.Patterns
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import com.example.haircare.R
 import com.example.haircare.databinding.FragmentRegisterBinding
-import androidx.navigation.findNavController
 
 class RegisterFragment : Fragment(R.layout.fragment_register) {
 
@@ -18,23 +18,6 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
 
         binding = FragmentRegisterBinding.bind(view)
 
-        binding.etName.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                binding.etName.setHint("Escribe tu nombre")
-            } else {
-                binding.etName.setHint("Nombre")
-            }
-        }
-
-        binding.etEmail.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) {
-                binding.etEmail.setHint("ejemplo@correo.com")
-            } else {
-                binding.etEmail.setHint("Correo electrónico")
-            }
-        }
-
-
         binding.btnRegister.setOnClickListener {
 
             val name = binding.etName.text.toString().trim()
@@ -42,31 +25,31 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
             val password = binding.etPassword.text.toString()
             val confirmPassword = binding.etConfirmPassword.text.toString()
 
+            binding.tilName.error = null
+            binding.tilEmail.error = null
+            binding.tilPassword.error = null
+            binding.tilConfirmPassword.error = null
+
             if (name.isEmpty()) {
-                binding.etName.error = "Introduce tu nombre"
+                binding.tilName.error = getString(R.string.error_name)
 
             } else if (email.isEmpty()) {
-                binding.etEmail.error = "Introduce tu correo"
+                binding.tilEmail.error = getString(R.string.error_email)
 
             } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                binding.etEmail.error = "Correo electrónico no válido"
-
-            } else if (password.isEmpty()) {
-                binding.etPassword.error = "Introduce una contraseña"
+                binding.tilEmail.error = getString(R.string.error_email)
 
             } else if (password.length < 8) {
-                binding.etPassword.error = "Mínimo 8 caracteres"
+                binding.tilPassword.error = getString(R.string.error_password)
 
-            } else if (confirmPassword.isEmpty()) {
-                binding.etConfirmPassword.error = "Confirma tu contraseña"
-
-            } else if (password != confirmPassword) {
-                binding.etConfirmPassword.error = "Las contraseñas no coinciden"
+            } else if (confirmPassword.isEmpty() || password != confirmPassword) {
+                binding.tilConfirmPassword.error =
+                    getString(R.string.error_confirm_password)
 
             } else {
                 Toast.makeText(
                     requireContext(),
-                    "Formulario de registro válido",
+                    getString(R.string.register_success),
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -75,6 +58,5 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
         binding.btnBack.setOnClickListener {
             view.findNavController().navigateUp()
         }
-
     }
 }

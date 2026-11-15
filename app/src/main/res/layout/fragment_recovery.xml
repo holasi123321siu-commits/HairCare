@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Recuperar contraseña"
+            android:text="@string/recovery_title"
             android:textSize="28sp"
             android:textStyle="bold"
             android:textColor="#5D4037"
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Introduce tu correo electrónico para solicitar la recuperación de tu cuenta."
+            android:text="@string/recovery_description"
             android:textSize="16sp"
             android:textColor="#795548"
             android:gravity="center"
@@ -36,7 +36,7 @@
             android:id="@+id/tilEmailRecovery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo electrónico"
+            android:hint="@string/email"
             android:layout_marginBottom="25dp">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -52,7 +52,7 @@
             android:id="@+id/btnSendRecovery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Solicitar recuperación"
+            android:text="@string/recovery"
             android:textColor="#FFFFFF"
             android:backgroundTint="#795548"
             android:layout_marginBottom="15dp" />
@@ -61,7 +61,7 @@
             android:id="@+id/btnBackLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Volver al inicio de sesión"
+            android:text="@string/back_login"
             android:textColor="#FFFFFF"
             android:backgroundTint="#A1887F" />
 

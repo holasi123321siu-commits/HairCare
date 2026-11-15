@@ -1,5 +1,48 @@
 <resources>
+
     <string name="app_name">HairCare</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Pantalla de bienvenida -->
+    <string name="welcome_title">Tu belleza, nuestra pasión</string>
+    <string name="welcome_description">Descubre nuestros servicios de peluquería y reserva tus citas de forma rápida y sencilla.</string>
+
+    <!-- Pantalla de login -->
+    <string name="login_title">Bienvenido de nuevo</string>
+    <string name="login_description">Inicia sesión en HairCare</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+
+    <!-- Pantalla de registro -->
+    <string name="register_title">Crear cuenta</string>
+    <string name="register_description">Únete a HairCare y disfruta de nuestros servicios</string>
+    <string name="register">Registrarse</string>
+    <string name="name">Nombre</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+
+    <!-- Pantalla de recuperación -->
+    <string name="recovery_title">Recuperar contraseña</string>
+    <string name="recovery_description">Introduce tu correo electrónico para solicitar la recuperación de tu cuenta.</string>
+    <string name="recovery">Solicitar recuperación</string>
+    <string name="back_login">Volver al inicio de sesión</string>
+
+    <!-- Textos comunes -->
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="back">Volver</string>
+
+    <!-- Errores de validación -->
+    <string name="error_name">Introduce tu nombre</string>
+    <string name="error_email">Correo electrónico no válido</string>
+    <string name="error_password">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="error_confirm_password">Las contraseñas no coinciden</string>
+    <string name="error_login">Correo o contraseña incorrectos</string>
+
+    <!-- Mensajes -->
+    <string name="login_success">Inicio de sesión correcto</string>
+    <string name="register_success">Formulario de registro válido</string>
+    <string name="recovery_success">Solicitud de recuperación realizada</string>
+
+    <!-- Pantalla Home -->
+    <string name="home">Home</string>
+
 </resources>

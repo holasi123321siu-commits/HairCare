@@ -23,16 +23,19 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString()
 
+            binding.tilEmail.error = null
+            binding.tilPassword.error = null
+
             if (email.isEmpty()) {
-                binding.etEmail.error = "Introduce tu correo electrónico"
+                binding.tilEmail.error = getString(R.string.error_email)
             } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                binding.etEmail.error = "El correo electrónico no es válido"
-            } else if (password.isEmpty()) {
-                binding.etPassword.error = "Introduce tu contraseña"
+                binding.tilEmail.error = getString(R.string.error_email)
+            } else if (password.length < 8) {
+                binding.tilPassword.error = getString(R.string.error_password)
             } else {
                 Toast.makeText(
                     requireContext(),
-                    "Formulario validado correctamente",
+                    getString(R.string.login_success),
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -47,6 +50,5 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         binding.btnBack.setOnClickListener {
             view.findNavController().navigateUp()
         }
-
     }
 }
