@@ -45,4 +45,6 @@
     <!-- Pantalla Home -->
     <string name="home">Home</string>
 
+    <string name="back_home">Back to start</string>
+
 </resources>

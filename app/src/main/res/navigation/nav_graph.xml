@@ -50,6 +50,14 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.haircare.navigation.fragments.HomeFragment"
-        android:label="@string/home" />
+        android:label="@string/home">
+
+        <action
+            android:id="@+id/action_home_to_welcome"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
 
 </navigation>
