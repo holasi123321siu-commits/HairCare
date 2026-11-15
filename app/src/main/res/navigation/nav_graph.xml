@@ -29,6 +29,12 @@
             android:id="@+id/action_login_to_recovery"
             app:destination="@id/recoveryFragment" />
 
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
     </fragment>
 
     <fragment
@@ -40,5 +46,10 @@
         android:id="@+id/recoveryFragment"
         android:name="com.example.haircare.navigation.fragments.RecoveryFragment"
         android:label="@string/recovery_title" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.haircare.navigation.fragments.HomeFragment"
+        android:label="@string/home" />
 
 </navigation>
