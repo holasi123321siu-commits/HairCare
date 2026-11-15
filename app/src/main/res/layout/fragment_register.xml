@@ -102,7 +102,8 @@
             android:layout_height="wrap_content"
             android:text="@string/register"
             android:textColor="#FFFFFF"
-            android:backgroundTint="#795548" />
+            android:backgroundTint="#795548"
+            android:enabled="false" />
 
         <Button
             android:id="@+id/btnBack"
